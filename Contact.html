@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - University of Wollongong in Dubai</title>
+    <style>
+        /* Your existing CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #594988, #8c663b);
+            color: #333;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 100px; /* Resize the logo */
+            height: auto;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin-left: 2rem; /* Adjust space between logo and nav links */
+        }
+        .nav-links li {
+            margin: 0 1rem;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: rgb(78, 78, 239);
+        }
+        .main-content {
+            background: #fff;
+            padding: 2rem;
+            margin-top: 1rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .main-content h1 {
+            font-size: 2.5rem;
+            color: #ff9800;
+        }
+        .main-content h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+        .main-content p {
+            margin: 1rem 0;
+            color: #666;
+        }
+        .contact-form {
+            background: #f9f9f9;
+            padding: 2rem;
+            margin-top: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+        .contact-form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form textarea {
+            height: 150px; /* Set a specific height for the textarea */
+        }
+        .contact-form button {
+            background-color: #ff9800;
+            color: #fff;
+            border: none;
+            padding: 0.7rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .contact-form button:hover {
+            background-color: #f57c00;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <a href="/index.html" class="logo">
+                    <img src="images/download (1).png" alt="University of Wollongong Dubai Logo">
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html" class="contact-btn">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-content">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or inquiries, please feel free to contact us using the form below:</p>
+            <div class="contact-form">
+                <h2>Send a Message</h2>
+                <form action="submit_contact.php" method="POST">
+                    <label for="full-name">Full Name:</label>
+                    <input type="text" id="full-name" name="full-name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
